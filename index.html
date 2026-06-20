@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemoryVerse - Birthday Surprise</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay">
+            <h1>Happy Birthday Aanya ❤️</h1>
+            <p>A small corner of the internet dedicated to our beautiful memories.</p>
+
+            <button onclick="exploreMemories()">
+                Explore Memories ✨
+            </button>
+        </div>
+    </section>
+
+    <div class="birthday-banner">
+        🎂 Wishing You Endless Happiness, Laughter & Love ❤️
+    </div>
+    <!-- Timeline -->
+    <section id="timeline" class="section">
+        <h2>Beautiful Memories ❤️</h2>
+
+        <div class="card">
+            <h3>2022</h3>
+            <p>The day our friendship began.</p>
+        </div>
+
+        <div class="card">
+            <h3>2023</h3>
+            <p>Our first unforgettable adventure.</p>
+        </div>
+
+        <div class="card">
+            <h3>2024</h3>
+            <p>Countless laughs and cherished moments.</p>
+        </div>
+
+        <div class="card">
+            <h3>2025</h3>
+            <p>Growing stronger every day.</p>
+        </div>
+
+        <div class="card">
+            <h3>2026</h3>
+            <p>Celebrating another amazing year.</p>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+<section class="section">
+    <h2>Memory Gallery 📸</h2>
+
+    <div class="gallery">
+        <img src="images/pic1.jpg" alt="Memory 1" onclick="openImage(this)">
+        <img src="images/pic2.jpg" alt="Memory 2" onclick="openImage(this)">
+        <img src="images/pic3.jpg" alt="Memory 3" onclick="openImage(this)">
+        <img src="images/pic4.jpg" alt="Memory 4" onclick="openImage(this)">
+        <img src="images/pic5.jpg" alt="Memory 5" onclick="openImage(this)">
+        <img src="images/pic6.jpg" alt="Memory 6" onclick="openImage(this)">
+    </div>
+</section>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <section class="section">
+        <h2>A Letter For You 💌</h2>
+
+        <button onclick="openLetter()">
+            Read My Letter ❤️
+        </button>
+    </section>
+
+    <!-- Surprise -->
+    <section class="section">
+        <button class="surprise-btn" onclick="showSurprise()">
+            A Special Message Awaits ❤️
+        </button>
+    </section>
+    <div id="letterModal" class="modal">
+
+    <span class="close" onclick="closeLetter()">
+        &times;
+    </span>
+
+    <div class="letter-box">
+
+        <h2>Dear Aanya ❤️</h2>
+
+        <p>
+            Thank you for every smile,
+            every conversation and every memory.
+
+            Life feels brighter because
+            you are part of it.
+
+            Happy Birthday ❤️
+        </p>
+
+    </div>
+
+</div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+
+            <h2>🎂 Happy Birthday Aanya ❤️</h2>
+
+            <p>
+                This website may contain memories,
+                photos and messages.
+                <br><br>
+                But the most beautiful part of it is YOU.
+                <br><br>
+                Thank you for being such an amazing person.
+                <br><br>
+                Wishing you happiness, success and endless smiles.
+                ❤️
+            </p>
+
+            <button onclick="closePopup()">
+                Thank You ❤️
+            </button>
+
+        </div>
+    </div>
+
+    <audio id="music">
+        <source src="music/birthday.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="surpriseMusic">
+        <source src="music/surprise.mp3"
+                type="audio/mpeg">
+    </audio>
+
+    <div class="heart heart1">❤️</div>
+    <div class="heart heart2">❤️</div>
+    <div class="heart heart3">❤️</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
